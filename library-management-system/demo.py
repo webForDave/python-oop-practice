@@ -11,10 +11,11 @@ class Book:
         else:
             print('Out of stock')
 
+    def return_book(self, title):
+        if title == self.title:
+            self.copies = self.copies + 1
+        else:
+            print('book not in library')
+        
 
 book1 = Book('The wise', 'David', 5)
-# book2 = Book('The heart', 'Maki', 3)
-
-book1.borrow('The wise')
-print(book1.copies)
-
