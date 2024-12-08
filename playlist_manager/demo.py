@@ -20,14 +20,22 @@ class Song:
         return f"Playing: {self.title} by {self.artist}"
     
 
+def main():
+    # print(song1.get_duration_in_minutes())
+    print(song1.play())
 
+    
+# collect song information from user 
 def get_inputs():
     title = input('Song name: ').strip()
     artist = input('Song Artist: ').strip()
     duration = int(input('Song Duration (in seconds): ').strip())
     return title, artist, duration
 
+
+# instance(s) of Song
 song1 = Song(*get_inputs())
 
-# print(song1.get_duration_in_minutes())
-print(song1.play())
+
+if __name__ == '__main__':
+    main()
