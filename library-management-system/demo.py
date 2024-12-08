@@ -16,6 +16,6 @@ class Book:
             self.copies = self.copies + 1
         else:
             print('book not in library')
-        
 
-book1 = Book('The wise', 'David', 5)
+    def info(self):
+        print(f"Book details: Title: {self.title}, Author: {self.author}, Copies: {self.copies}")
