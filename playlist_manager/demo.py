@@ -16,6 +16,9 @@ class Song:
         minutes = seconds // 60
         return f"{minutes}:{seconds_part}"
     
+    def play(self):
+        return f"Playing: {self.title} by {self.artist}"
+    
 
 
 def get_inputs():
@@ -26,4 +29,5 @@ def get_inputs():
 
 song1 = Song(*get_inputs())
 
-print(song1.get_duration_in_minutes())
+# print(song1.get_duration_in_minutes())
+print(song1.play())
