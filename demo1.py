@@ -16,3 +16,19 @@ class Car:
             return f"This engine is {self.__engine_status}"
         return f"This engine is good to go"
     
+
+class Vehicle:
+
+    def __init__(self):
+        pass
+
+
+    def move(self):
+        pass
+    
+
+class Bicycle(Vehicle):
+
+    def move(self):
+        return 'Bicycle is moving'
+    
