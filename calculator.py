@@ -1,6 +1,6 @@
 class Calculator:
     def __init__(self):
-        self.__result = 5
+        self.__result = 0
 
     def add(self, a):
         self.__result += a
@@ -19,7 +19,7 @@ class Calculator:
     def modulo(self, a):
         if a == 0:
             raise ValueError("Cannot divide by zero")
-        self.__result % a
+        self.__result = self.__result % a
 
     def power(self, a):
         self.__result = pow(self.__result, a)
